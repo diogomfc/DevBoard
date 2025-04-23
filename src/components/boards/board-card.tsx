@@ -13,7 +13,7 @@ interface BoardCardProps {
   error: string | null;
 }
 
-// Determine background color based on board kind
+
 const getBoardTypeColor = (kind?: string) => {
   switch (kind) {
     case 'public':
