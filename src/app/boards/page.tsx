@@ -5,7 +5,6 @@ import { RefreshCw } from "lucide-react";
 import { MondayBoard } from "@/types/monday";
 import BoardsList from "@/components/boards/board-list";
 
-
 export default function BoardsPage() {
   const [boards, setBoards] = useState<MondayBoard[]>([]);
   const [loading, setLoading] = useState(true);
@@ -16,10 +15,8 @@ export default function BoardsPage() {
       setLoading(true);
       setError(null);
 
-      const res = await fetch("/api/boards");
-      if (!res.ok) {
-        throw new Error("Erro ao buscar boards");
-      }
+      const res = await fetch("/api/boards", { cache: "no-store" }); // garantido sem cache
+      if (!res.ok) throw new Error("Erro ao buscar boards");
 
       const data = await res.json();
       setBoards(data);
