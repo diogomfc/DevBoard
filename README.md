@@ -1,17 +1,49 @@
-1 Configurar
-Abra o terminal e cole este comando
+# DevBoard - monday.com Integration Challenge
 
-npm i -g @mondaycom/apps-cli
+Projeto desenvolvido como parte do desafio técnico para vaga de Desenvolvedor Junior, demonstrando integração com a plataforma monday.com utilizando seu SDK oficial e Design System Vibe.
 
-Conecte a interface de linha de comando (CLI) à sua conta da monday com seu token de desenvolvedor pessoal
+## 🚀 Tecnologias Utilizadas
+- **Next.js** (App Router)
+- **monday SDK** (Integração com API)
+- **Vibe Design System** (Componentes UI)
+- **TailwindCSS** (Estilização)
+- **TypeScript** (Tipagem estática)
 
-mapps init -t eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjUwMTMzMTkzOCwiYWFpIjoxMSwidWlkIjo3NTAwNjgwMywiaWFkIjoiMjAyNS0wNC0xN1QxMjoyMzoyNS4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MjkxMjI5NjQsInJnbiI6InVzZTEifQ.usVhBAif1t9vlnbTheBSJc_bgQrHtCd4n7ERYcKoOsk
+## ✨ Features Implementadas
+✅ Integração completa com API do monday.com  
+✅ Visualização de boards e itens  
+✅ Perfil do usuário com avatar  
+✅ Componentes reutilizáveis seguindo Vibe Design System  
+✅ Responsividade e acessibilidade básica  
 
-2 Implantar
-Escreva seu código e use o seguinte comando na pasta principal de seus projetos
+## 🛠️ Desafios Superados
+- Implementação de componentes customizados mantendo consistência com o Design System
+- Gerenciamento de estado entre client/server components no Next.js
+- Tratamento de erros na API
+- Otimização de performance das requisições
 
-mapps code:push -i 10719658
+## 📌 Como Executar
+1. Instale as dependências:
+```bash
+npm install
+```
 
+2. Configure as variáveis de ambiente:
+```env
+MONDAY_CLIENT_ID=seu_client_id
+MONDAY_API_TOKEN=seu_token
+```
 
-____
-npm i @mondaydotcomorg/api
+3. Inicie o servidor:
+```bash
+npm run dev
+```
+
+## 🔮 Próximos Passos
+- Implementar dark mode
+- Adicionar testes automatizados
+- Expandir componentes do Vibe Design System
+- Melhorar tratamento de erros
+
+## 📄 Licença
+MIT
